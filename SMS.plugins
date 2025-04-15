@@ -1,7 +1,7 @@
 #!name= SMS签到
 #!desc= SMS签到
 #!author= MX
-#!system = iOS
+#!system = macOS
 #!loon_version = 3.3.0(853)
 
 [Argument]
