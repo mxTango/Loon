@@ -2,7 +2,7 @@
 #!desc= SMS签到
 #!author= MX
 #!system = iOS
-
+#!loon_version = 3.3.0(853)
 
 [Argument]
 arg3 = switch,true,tag=签到开关,desc=是否启用
