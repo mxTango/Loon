@@ -2,11 +2,11 @@
 #!desc= SMS签到
 #!author= MX
 #!system = IOS
-#!loon_version = 3.3.0(850)
+#!loon_version = 3.3.0(849)
 
 [Argument]
 CORN = input,"50 16 * * 1,5",tag=定时corn,desc=定时
-TURN = switch,true,tag=签到开关,desc=是否启用
+TURN = switch,false,tag=签到开关,desc=是否启用
 
 
 [script]
