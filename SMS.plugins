@@ -1,8 +1,8 @@
 #!name= SMS签到
 #!desc= SMS签到
 #!author= MX
-#!system = macOS
-#!loon_version = 3.3.0(853)
+#!system = IOS
+#!loon_version = 3.3.0(850)
 
 [Argument]
 arg3 = switch,true,tag=签到开关,desc=是否启用
