@@ -1,15 +1,13 @@
 #!name= SMS签到
 #!desc= SMS签到
-#!author= MX
-#!system = IOS
-#!loon_version = 3.3.0(849)
+#!system = ios
+#!loon_version = 3.3.0(850)
 
 [Argument]
 CORN = input,"50 16 * * 1,5",tag=定时corn,desc=定时
-TURN = switch,false,tag=签到开关,desc=是否启用
+TURN = switch,true,tag=签到开关,desc=开关
 
 
 [script]
-#http-response ^https?:\/\/example\.com\/conf\/server-mapping script-path = remove_ads.js, requires-body = true, tag = 移除广告,argument=[{arg1},{arg2},{arg3}]
 
-cron {CORN} script-path=SMS签到240623 - 副本.js, timeout=200, tag=sms签到,enable=[{TURN}]
+cron {CORN} script-path=SMSlogin240623.js, timeout=200, tag=sms签到,enable={TURN}
