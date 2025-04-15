@@ -5,10 +5,11 @@
 #!loon_version = 3.3.0(850)
 
 [Argument]
-arg3 = switch,true,tag=签到开关,desc=是否启用
+CORN = input,"50 16 * * 1,5",tag=定时corn,desc=定时
+TURN = switch,true,tag=签到开关,desc=是否启用
 
 
 [script]
 #http-response ^https?:\/\/example\.com\/conf\/server-mapping script-path = remove_ads.js, requires-body = true, tag = 移除广告,argument=[{arg1},{arg2},{arg3}]
 
-cron "50 16 * * 1,5" script-path=SMS签到240623 - 副本.js, timeout=200, tag=sms签到,argument=[{arg3}]
+cron {CORN} script-path=SMS签到240623 - 副本.js, timeout=200, tag=sms签到,argument=[{TURN}]
